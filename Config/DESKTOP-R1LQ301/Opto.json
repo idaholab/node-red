@@ -1,0 +1,65 @@
+{
+"EquipmentTags": {
+	"EquipmentName": "Opto",	
+	"EquipmentType": "Main Controller",
+	"Communication": "Opto",
+	"PortNum":50013,	
+	"EquipmentLocation": "ESL D100",
+	"Emails": "micah.casteel@inl.gov",
+	"Reference":"Opto Forums"
+},
+"Channels": {
+	"Cell_Temperature":{
+		"Active": true,				
+		"DataType": "float32",		
+		"Type":"Analog",
+		"ReadWrite": "R",		
+		"Module": 1,
+		"Channel":0,
+		"Scalar":1,
+		"Offset":0,		
+		"Decimal":1,
+		"Units":"degC",
+		"Tags":["Opto", "Monitor", "MediumSpeed"]		
+	},
+	"Cell_Voltage":{
+		"Active": true,				
+		"DataType": "float32",		
+		"Type":"Analog",
+		"ReadWrite": "R",		
+		"Module": 1,
+		"Channel":1,
+		"Scalar":1,
+		"Offset":0,		
+		"Decimal":1,
+		"Units":"V",
+		"Tags":["Opto", "Monitor", "MediumSpeed"]		
+	},
+	"SOEC_Temp_Setpoint":{
+		"Active": true,				
+		"DataType": "float32",		
+		"Type":"Analog",
+		"ReadWrite": "W",		
+		"Module": 1,
+		"Channel":1,
+		"Scalar":1,
+		"Offset":0,		
+		"Decimal":1,
+		"Units":"degC",
+		"Tags":["Opto", "Monitor", "MediumSpeed"]		
+	},
+	"Control_Valve":{
+		"Active": true,				
+		"DataType": "bool",		
+		"Type":"Analog",
+		"ReadWrite": "W",		
+		"Module": 1,
+		"Channel":1,
+		"Scalar":1,
+		"Offset":0,		
+		"Decimal":1,
+		"Units":"NA",
+		"Tags":["Opto", "Monitor", "MediumSpeed"]		
+	}
+}	
+}

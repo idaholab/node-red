@@ -1,0 +1,40 @@
+{
+	"SystemTags": {
+		"SystemName": "SOEC",
+		"SystemType": "ControlSystem",
+		"SystemLocation": "Define Location",
+		"Emails": "micah.casteel@inl.gov",
+		"IP": "localhost",
+		"Personality": "SOEC_Personality.json",
+		"RootPath": "C:\\Users\\ElectrolysisLab\\Documents\\Cleaned Repo For Git\\Hydrogen Repo\\Config\\DESKTOP-R1LQ301\\",
+		"Reference": "NA.pdf",
+		"Database":"System_Database.json"
+	},
+	"Equipment": {
+		"Opto": {
+			"Type": "System",
+			"Active": true,
+			"Config": "Opto.json"
+		}
+	},
+	"DataSampling": {
+		"HighSpeed": {
+			"FilterTopic": "Tags",
+			"FilterKey": "HighSpeed",
+			"Rate": 2,
+			"Unit": "S"
+		},
+		"MediumSpeed": {
+			"FilterTopic": "Tags",
+			"FilterKey": "MediumSpeed",
+			"Rate": 10,
+			"Unit": "S"
+		},
+		"LowSpeed": {
+			"FilterTopic": "Tags",
+			"FilterKey": "LowSpeed",
+			"Rate": 30,
+			"Unit": "S"
+		}
+	}
+}

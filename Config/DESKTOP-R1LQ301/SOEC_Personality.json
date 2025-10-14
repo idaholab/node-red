@@ -1,0 +1,14 @@
+{
+"PersonalityConfig": {
+	"PersonalityName": "SOECBasic",	
+	"PersonalityLocation": "ESL D100",
+	"Emails": "micah.casteel@inl.gov",
+	"Reference":"NA.pdf"
+},
+"Components":{
+	"SystemStates":"SOEC_Personality_SystemStates.json",
+	"AlarmStates":"SOEC_Personality_AlarmStates.json",	
+	"ControlStates":"SOEC_Personality_ControlStates.json",
+	"Database":"SOEC_Database.json"
+}
+}

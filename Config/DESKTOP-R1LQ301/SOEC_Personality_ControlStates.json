@@ -1,0 +1,42 @@
+{
+"PersonalityConfig": {
+	"PersonalityName": "SOECBasic",	
+	"PersonalityLocation": "ESL D100",
+	"Emails": "micah.casteel@inl.gov",
+	"IP Address": "Server IP Address",
+	"Reference":"NA.pdf",
+	"Author": "Temitayo Olowu"
+},
+"Automatic_Controls":{
+	"Control/Hydrogen_Fire":{
+		"Active":true,		
+		"Rule":{
+			"if":[
+				{"==":[{"var":"Hydrogen_Fire_Alarm"}, "Critical"]}, 
+				"GasShutOff",
+			null			
+			]	
+		},
+		"Data":{
+			"Hydrogen_Fire_Alarm":"$AlarmState/Alarms/Hydrogen_Fire"
+		}
+	}
+},
+
+"Control_Methods":{	
+
+	"GasShutOff":[
+		{
+		"Topic":"Relay/Request/Opto",
+		"Payload":{
+			"Read/Write":"W", 
+			"Channels":{
+				"Control_Valve":"OFF"
+			}
+		}
+		}
+	]
+
+}
+}
+

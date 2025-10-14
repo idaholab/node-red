@@ -1,0 +1,40 @@
+{
+"PersonalityConfig": {
+	"PersonalityName": "SOECBasic",	
+	"PersonalityLocation": "ESL D100",
+	"Emails": "micah.casteel@inl.gov",
+	"IP Address": "Server IP Address",
+	"Reference":"NA.pdf",
+	"Author": "Temitayo Olowu"
+},
+"AlarmStates":{
+		
+	"Alarms/Cell_OverTemp":{
+		"Active":true,
+		"Rule":{
+			"if":[
+					{">=":[{"var":"Cell_T"}, 900]}, 
+			"Cell_OverTemp",
+			null
+			]	
+		},
+		"Data":{
+			"Cell_T":"$LiveData/Opto/Cell_Temperature"
+		}
+	},		
+	"Alarms/Cell_Overvoltage":{	
+		"Active":true,	
+		"Rule":{
+			"if":[
+					{">=":[{"var":"Cell_V"}, 1.03]},
+				"Alarm", 
+            null		
+			]	
+		},
+		"Data": {
+			"Cell_V": "$LiveData/Opto/Cell_Voltage"
+		}
+	}
+}
+}
+

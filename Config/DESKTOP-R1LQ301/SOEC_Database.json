@@ -1,0 +1,16 @@
+{
+"DatabaseTags": {
+	"DatabaseName": "SOEC-Database",	
+	"DatabaseType": "Postgresql",
+	"DatabaseLocation": "ESL D100",
+	"Emails": "micah.casteel@inl.gov",
+	"Reference":"No reference"
+	},
+"DatabaseDetails":{	
+	"Server":"postgresql://postgres:S03C@192.168.0.97:5432/oxeon_rsoc",
+	"DefaultTable":"default_oxeon",
+	"NewTableVerbiage":" ",
+	"HyperTableConversionVerbiage":" ",
+	"IndexVerbiage":" "
+	}
+}
